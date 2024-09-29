@@ -342,8 +342,10 @@ onMounted(() => {
                 v-model="form.specifyCriteriaUsed.pvap"
               >
                 <el-checkbox
-                  label="Criterion #1: Positive culture of one of the following specimens, meeting quantitative or semi-quantitative thresholds"
-                  name="specifyCriteriaUsed"
+                  label="Criterion #1: Positive culture of one of the following specimens, meeting quantitative or semi-quantitative thresholds as
+outlined in protocol,t without requirement for purulent respiratory secretions:"
+                  class="text-width"
+                  
                 ></el-checkbox>
                 <el-checkbox
                   label="Endotracheal aspirate"
@@ -568,4 +570,9 @@ h2 {
 .el-button:hover {
   background-color: #45a049;
 }
+
+.text-width{
+  text-wrap: wrap;
+}
+
 </style>
