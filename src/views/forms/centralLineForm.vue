@@ -192,109 +192,6 @@ onMounted(() => {
 
           <el-col :span="12">
             <el-form-item label="Date Admitted to Facility:">
-              <el-input v-model="form.age" placeholder="Enter date admitted to facility" />
-            </el-form-item>
-          </el-col>
-
-          <el-col :span="12">
-            <el-form-item label="Gender:">
-              <el-select
-                v-model="form.gender"
-                placeholder="Select gender"
-                style="width: 100%"
-              >
-                <el-option label="Male" value="Male" />
-                <el-option label="Female" value="Female" />
-                <el-option label="Other" value="Other" />
-              </el-select>
-            </el-form-item>
-          </el-col>
-          <el-col :span="12">
-            <el-form-item label="Age:">
-              <el-input v-model="form.age" placeholder="Enter age" />
-            </el-form-item>
-          </el-col>
-          <el-col :span="12">
-            <el-form-item label="Date of Birth:">
-              <el-date-picker
-                v-model="form.dateOfBirth"
-                type="date"
-                placeholder="Select date"
-                style="width: 100%"
-              />
-            </el-form-item>
-          </el-col>
-          <el-col :span="12">
-            <el-form-item label="Race:">
-              <el-input v-model="form.race" placeholder="Enter race" />
-            </el-form-item>
-          </el-col>
-          <el-col :span="12">
-            <el-form-item label="Event Type:">
-              <el-input v-model="form.eventType" placeholder="Enter event type" />
-            </el-form-item>
-          </el-col>
-          <el-col :span="12">
-            <el-form-item label="Date of Event:">
-              <el-date-picker
-                v-model="form.dateOfEvent"
-                type="date"
-                placeholder="Select date"
-                style="width: 100%"
-              />
-            </el-form-item>
-          </el-col>
-          <el-col :span="12">
-            <el-form-item label="Post Procedure UTI:">
-              <el-checkbox-group v-model="form.postProcedureUTI">
-                <el-checkbox label="Yes" name="postProcedureUTI"></el-checkbox>
-                <el-checkbox label="No" name="postProcedureUTI"></el-checkbox>
-              </el-checkbox-group>
-            </el-form-item>
-          </el-col>
-          <el-col :span="12">
-            <el-form-item label="Date Of Procedure">
-              <el-date-picker
-                v-model="form.dateOfProcedure"
-                type="date"
-                placeholder="Select date"
-                style="width: 100%"
-              />
-            </el-form-item>
-          </el-col>
-          <el-col :span="12">
-            <el-form-item label="NHSN Procedure Code">
-              <el-input v-model="form.nhsnProcedureCode" />
-            </el-form-item>
-          </el-col>
-          <el-col :span="12">
-            <el-form-item label="ICD-10-PCS or CPT Procedure Code">
-              <el-input
-                v-model="form.icd10PCSOrCptProcedureCode"
-                placeholder="Enter ICD-10-PCS or CPT Procedure Code"
-              />
-            </el-form-item>
-          </el-col>
-          <el-col :span="24">
-            <el-form-item
-              label="MDRO Infection Surveillance:"
-              label-position="top"
-            >
-              <el-checkbox-group v-model="form.mdroInfectionSurveillance">
-                <el-checkbox
-                  label="Yes, this infection's pathogen & location are in-plan for Infection Surveillance in the MDRO/CDI Module"
-                  name="mdroInfectionSurveillance"
-                ></el-checkbox>
-                <el-checkbox
-                  label="No, this infection's pathogen & location are not in-plan for Infection Surveillance in the MDRO/CDI Module"
-                  name="mdroInfectionSurveillance"
-                ></el-checkbox>
-              </el-checkbox-group>
-            </el-form-item>
-          </el-col>
-
-          <el-col :span="12">
-            <el-form-item label="Date Admitted to Facility:">
               <el-date-picker
                 v-model="form.dateAdmittedToFacility"
                 type="date"
@@ -447,6 +344,7 @@ onMounted(() => {
             </el-checkbox-group>
             </el-form-item>
           </el-col>
+
           <el-col :span="12">
             <el-form-item label="Laboratory" label-position="top">
               <el-checkbox-group
@@ -502,6 +400,7 @@ therapyt"
             <el-form-item label="per specific site criteria">
             </el-form-item>
           </el-col>
+
           <el-col :span="24">
             <el-form-item label="Detected:" label-position="top">
             <el-checkbox-group v-model="form.detected">
@@ -524,6 +423,7 @@ therapyt"
             </el-checkbox-group>
             </el-form-item>
           </el-col>
+
           <el-col :span="12">
             <el-form-item label="Seconda Bloodstream Infection:">
               <el-checkbox-group v-model="form.secondaryBloodstreamInfection">
@@ -532,6 +432,7 @@ therapyt"
               </el-checkbox-group>
             </el-form-item>
           </el-col>
+
           <el-col :span="6">
             <el-form-item label="Died:">
               <el-checkbox-group v-model="form.died">
